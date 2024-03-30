@@ -114,26 +114,97 @@ Error Correction| Easier to correct typos with visual cues|	Requires more precis
 
 
 
-## Options
-*ls -a* -> to list all and hidden files inside folder
-*touch* - to open a file (!wq to save and quit))
-*mkdir* - to create a folder
-*cat* - to read a file
-*echo* - to write to a file
-*cd* - to change directory
-*rmdir* - to delete a folder
-*rm -rf* - to delete a file
-*cp*-  to copy a file
-*mv* - to move a file
-*find* - to find a file
+## Arguments and options ## Linux Commands
 
+*ls -a* -> to list all and hidden files inside folder
+*ls -lh* - to list all contents with their size and permissions
+*ls-lt* - sort the contents in the direcory in time order
+*ls-ltr* - sort the contents in the direcory in time order and reverse order - odlder modified files first
+- - The -a, -h, -l, -r, -t are all options supported by the ls command. They modify the output returned by ls command.
+*cd* - to change directory
+*pwd* - to print current working directory
+
+
+*rmdir* - to delete a folder
+*tree* - to print tree structure of a directory
+
+*history* - to view command history - run the commands with their number !555 - it runs the 555th command in your history
+**Commands to modify files**
+**CRUD Operations** - Create, Read, Update, Delete**
+- *mkdir* - to create a folder
+- *touch* - to create 
+- *cat* - to read a file (!wq to save and quit)
+- *head* - to print head line of a file
+- *tail* - to print 10 lines from head
+- *more* - to print large file page by page 
+- - “space” key - Go to next page
+- - “b” key - Go back one page
+- - “Enter” key - Show next line of content
+- *echo* - to write to a file
+- *rm -rf* - to delete a file
+- *cp*-  to copy a file
+- *mv* - to move a file
+- *find* - to find a file
+- *vi* - to create and 
+- *vim* - to edit a file
+- *nano* - to edit a file -  save a file press ctrl + o, exit the editor use ctrl +x
+- *chmod* - to change file permissions
+
+- -  Commands are used to perform different operations on a terminal (non UI)
+- - Commands used while navigating file system - pwd, cd, ls
+- - Relative paths can be used to easily navigate between directories
+- - ~ refers to the home directory
+- - . refers to the current working directory
+- - .. refers to the parent working directory
+- - Commands for CRUD on files and directories - mkdir, touch, cp, mv, rmdir, rm, nano
+- - Commands for printing file content - cat, head, tail, more, less
 # System Design
 HLD and LLD
 
+## What are Linux operating systems?
+An operating system is a set of tools which makes our life easier to interact with computers eg: Go through files and folders, configure settings, connect to network etc. Windows is a commonly operating system.
+
+Linux is a kernel (i.e, a template) based on which operating systems can be created. The linux kernel takes care of important operations like processing files, taking care of memory, cpu etc.
+
+Here are a few Linux based operating systems (also called Linux Distributions)
+
+1. Ubuntu
+2. Debian
+3. Fedora
+
+
+## Linux in Real World
+You are using linux servers on a daily basis, whether you realize it or not
+
+- **Cloud applications** - Dropbox/Google drive, Other SaaS, Online streaming/gaming services
+- **Mobiles, TVs, Cars, Smartwatches, Routers, Supercomputers**
+- Almost all Enterprise machines
+
+## What is command line/terminal?
+- A Command Line Interface (CLI) or Terminal is a Text-based user interface (i.e, no GUI)
+- Used to run programs and interact with the computer
+- All GUI (Graphical User Interface) based actions eventually translate to a command in the terminal which gets executed
+- The Terminal gives a direct way to run these commands
+- Popular CLIs (Command Line Interface):
+- - Powershell: Windows
+- - Bash: Linux & MacOS
+
+## Why you need Terminal?
+  - A emulator
+  -  A tool
+
+### Absolute vs Relative paths
+- Relative paths - sees forward from current directory -can be relative to home directory too. starts from /
+ ![Relative path](./resources/relativepath.png)
+- Absolute paths - starts from root directory
 
 
 
-
-
+##FOSSASIA
 
 Windows is a closed source operating system developed by Microsoft. to leavarage benifits the linux commands windows offers `WSL`. Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting VM.
+
+inatall the linux systems to windows, list all supported linux versions,
+- wsl -l
+After install switch to othe command line
+- wsl -d Ubuntu
